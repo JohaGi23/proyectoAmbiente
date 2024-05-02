@@ -52,6 +52,7 @@ body {
 
 .header .nav-links {
   list-style: none;
+	align-items: center;
 }
 
 .header .nav-links li {
@@ -90,6 +91,8 @@ body {
   color: #ffbc0e;
   transform: scale(1.1);
 }
+
+
 /*Fin NavBar*/
 /*Fin Richard*/
 
