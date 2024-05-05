@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 :root {
-  --principal-color: #1d40af;
-  --button-color: #7ce20e;
-  --title-color: #67e8f9;
+  --principal-color: #1b3039;
+  --button-color: #ffffff;
+  --title-color: #000000;
   --nav-fonts-color: #ffffff;
   --page-fonts-color: #000000;
-  --background-color: #fff59d;
+  --background-color: #ffffff;
+	--mariana-title-color: #ffffff;
+	--mariana-p-color: #ffffff;
 }
 
 * {
@@ -179,5 +181,77 @@ body {
 /*Fin Joana*/
 
 /*Mariana*/
+
+h1 {
+  text-align: center;
+  color: #e2f1f8;
+}
+
+h3 {
+  text-align: center;
+  color: var(--mariana-title-color);
+}
+p {
+  color:var(--mariana-p-color);
+  text-align: center;
+}
+.subtitulo {
+  color: #1b3039;
+  text-align: center;
+}
+.parrafo2 {
+  color: #1b3039;
+}
+.tabla1 {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 20px;
+}
+
+.centro {
+  margin: 10px;
+  height: 500px;
+  justify-content: space-between;
+}
+.centro .lateral {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.centro .sesion {
+  width: 300%;
+  height: 300%;
+}
+.lateral .cafe {
+  background-color: #1b3039;
+  
+  width: 300%;
+  border: 2px solid black;
+  border-radius: 7px;
+  margin: 4px;
+}
+.lateral .rojo {
+  background-color: #1b3039;
+  
+  width: 300%;
+  border: 2px solid black;
+  border-radius: 7px;
+  margin: 4px;
+}
+.lateral .verde {
+  background-color: #1b3039;
+	
+  width: 300%;
+  border: 2px solid black;
+  border-radius: 7px;
+  margin: 4px;
+}
+.imagen1 {
+  height: 500px;
+  width: 1497px;
+  margin: 5px;
+}
 
 /*Fin Mariana*/
