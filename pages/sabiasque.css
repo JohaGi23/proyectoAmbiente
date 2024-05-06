@@ -1,4 +1,4 @@
-/* styles.css */
+
 
 body {
     font-family: "Nunito", sans-serif;
@@ -70,7 +70,7 @@ nav ul li a {
     box-shadow: 0 4px 6px rgba(248, 246, 246, 0.907); /* Añadimos una sombra a las imágenes */
 }
 
-/* styles.css */
+
 
 #imagen3 {
     width: 80%;
@@ -91,7 +91,7 @@ nav ul li a {
     margin-bottom: 10px; /* Agregamos un margen inferior para separar el texto del siguiente ítem */
     text-shadow: 1px 1px 2px rgb(3, 3, 3); /* Agregamos una sombra al texto */
 }
-/* En tu archivo CSS */
+
 
 #comentarios {
     background-color: #f9f9f9;
@@ -151,7 +151,7 @@ nav ul li a {
 .comentario p {
     margin: 5px 0;
 }
-/* En tu archivo CSS */
+
 
 footer {
     color: #f0f0f0; /* Cambiamos el color del texto a un tono de gris claro */
