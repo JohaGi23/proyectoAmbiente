@@ -36,6 +36,8 @@ body {
   align-items: center;
   height: 60px;
   padding: 5px 10%;
+  position: fixed;
+  width: 100%;
 }
 
 .header .logo {
@@ -173,6 +175,88 @@ body {
 /*Fin Richard*/
 
 /*Kevin*/
+.fondo{
+background-image: url("./assets/img/bg2.jpg");
+height: 450px;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+opacity: 1;
+background-color: white;
+}
+
+.title{
+  display: flexbox;
+  padding-top: 67px;
+  padding-bottom: 10px;
+  color: #f2e7e7;
+  font-size: 4pc;
+}
+
+.info{
+  display: flexbox;
+  padding: 30px;
+  color: #f2e7e7;
+  font-size: 2pc;
+}
+
+#servicios{
+  margin-top: -50px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(30, 91, 17);
+  border-radius: 10px 10px 0px 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.servicios{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.servicios1{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton{
+  width: 90px;
+  background-color: orangered;
+  border-radius: 10%;
+  border: 0;
+}
+
+@media screen and (max-width: 573px) {
+  .title{
+    font-size: 3pc;
+  }
+  
+  .info{
+    font-size: 1.5pc;
+  }
+
+  .servicios{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .servicio1{
+    margin-top: 30px;
+  }
+
+  }
 
 /*Fin Kevin*/
 
@@ -185,6 +269,11 @@ body {
 h1 {
   text-align: center;
   color: #e2f1f8;
+}
+
+h2{
+  text-align: center;
+  color: cadetblue;
 }
 
 h3 {
