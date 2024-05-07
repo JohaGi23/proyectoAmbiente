@@ -2,7 +2,7 @@ export function Header() {
 	const objetoDOM = document;
 	const pagina = `
 	<div class="logo">
-			<a href="#"><img src="/assets/img/logo.png" alt="Logo de la marca">
+			<a href="./index.html"><img src="/assets/img/logo.png" alt="Logo de la marca">
 		</div></a>
 		<nav>
 			<ul class="nav-links">
