@@ -28,6 +28,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   margin: 0;
+	padding-bottom: 60px;
 }
 main {
   margin: 0 5%;
@@ -384,7 +385,12 @@ footer {
   color: #f0f0f0; /* Cambiamos el color del texto a un tono de gris claro */
   font-size: 20px;
   background-color: #1b3039;
-  margin: 10px;
+  margin: 0 px;
+	position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
 }
 
 /*Fin Joana*/
