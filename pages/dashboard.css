@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 :root {
-  --principal-color: #1d40af;
-  --button-color: #7ce20e;
-  --title-color: #67e8f9;
+  --principal-color: #1b3039;
+  --button-color: #ffffff;
+  --title-color: #000000;
   --nav-fonts-color: #ffffff;
   --page-fonts-color: #000000;
   --background-color: #ffffff;
+  --mariana-title-color: #ffffff;
+  --mariana-p-color: #ffffff;
 }
 
 * {
