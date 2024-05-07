@@ -11,7 +11,7 @@ export function Header() {
 				<li><a href="./pages/acercade.html">About</a></li>
 			</ul>
 		</nav>
-		<a href="#" class="btn"><button>Contact</button></a>
+		<a href="./pages/contact.html" class="btn"><button>Contact</button></a>
 
 		<a onclick="openNav()" href="#" class="menu"><button>Menu</button></a>
 
@@ -21,7 +21,7 @@ export function Header() {
 				<a href="#">Home</a>
 				<a href="./pages/dashboard.html">Dashboard</a>
 				<a href="./pages/acercade.html">About</a>
-				<a href="#">Contact</a>
+				<a href="./pages/contact.html">Contact</a>
 			</div>
 		</div>
 	`;
