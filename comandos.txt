@@ -1,0 +1,4 @@
+ py -m venv modules
+cd .\modules\
+cd .\Scripts\
+activate

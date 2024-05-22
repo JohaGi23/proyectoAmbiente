@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --principal-color: #1b3039;
+  --button-color: #ffffff;
+  --title-color: #000000;
+  --nav-fonts-color: #ffffff;
+  --page-fonts-color: #000000;
+  --background-color: #ffffff;
+  --mariana-title-color: #ffffff;
+  --mariana-p-color: #ffffff;
+}
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  /*font-size: 62.5%;*/
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+	padding-bottom: 60px;
+	width: 100%;
+	align-items: center;
+}
+main {
+  margin: 0 5%;
+}
+
+/*Richard*/
+/*Navbar*/
+.header {
+  background-color: #1b3039;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 5px 10%;
+  position: fixed;
+  width: 100%;
+}
+
+.header .logo {
+  cursor: pointer;
+}
+
+.header .logo img {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.header .logo img:hover {
+  transform: scale(1.2);
+}
+
+.header .nav-links {
+  list-style: none;
+  align-items: center;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.header .nav-links li:hover,
+.overlay a:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links a {
+  font-weight: 700;
+  font-size: 14px;
+  color: #eceff1;
+  text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+  color: #ffbc0e;
+}
+
+.menu {
+  display: none;
+}
+
+.header .btn button,
+.header .menu button {
+  font-weight: 700;
+  color: #1b3039;
+  padding: 9px 25px;
+  background: #eceff1;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover,
+.header .menu button:hover {
+  background-color: #e2f1f8;
+  color: #ffbc0e;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+  .nav-links,
+  .btn {
+    display: none;
+  }
+  .menu {
+    display: inherit;
+  }
+}
+
+/*Nav*/
+.header a {
+  text-decoration: none;
+}
+
+.header .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(33, 49, 63, 0.95);
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  color: #eceff1;
+}
+
+.header .overlay a:hover,
+.header .overlay a:focus {
+  color: #ffbc0e;
+}
+
+.header .overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+
+@media screen and (max-height: 450px) {
+  .header .overlay a {
+    font-size: 20px;
+  }
+
+  .header .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/*Fin NavBar*/
+
+
+/*Acerca De*/
+.mainAcercade{
+	margin-top: 80px;
+}
+.mainAcercade .contenedor{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	justify-content: center;
+}
+
+.mainAcercade .contenedor .tarjeta{
+	width: 200px;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background: rgba(198, 198, 198, 0.244);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+	cursor: default;
+	transition: all 400ms ease;
+}
+
+.mainAcercade .contenedor .tarjeta:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+.mainAcercade .contenedor .tarjeta img{
+	width: 100%;
+	height: 200px;
+}
+
+.tarjeta .contenido{
+	padding: 15px;
+	text-align: center;
+}
+
+.tarjeta .contenido p{
+	line-height: 1.5;
+	color: #6a6a6a;
+}
+
+.tarjeta .contenido h3{
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.tarjeta .contenido a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease ;
+	
+}
+.tarjeta .contenido a:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
+/*Fin Acerca De*/
+
+/*Fin Richard*/
+
+/*Kevin*/
+.fondo {
+  background-image: url("./assets/img/bg2.jpg");
+  height: 450px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 1;
+  background-color: white;
+}
+
+.title {
+  display: flexbox;
+  padding-top: 67px;
+  padding-bottom: 10px;
+  color: #f2e7e7;
+  font-size: 4pc;
+}
+
+.info {
+  display: flexbox;
+  padding: 30px;
+  color: #f2e7e7;
+  font-size: 2pc;
+}
+
+#servicios {
+  margin-top: -50px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(30, 91, 17);
+  border-radius: 10px 10px 0px 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.servicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.servicios1 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton {
+  width: 90px;
+  background-color: orangered;
+  border-radius: 10%;
+  border: 0;
+}
+
+@media screen and (max-width: 573px) {
+  .title {
+    font-size: 3pc;
+  }
+
+  .info {
+    font-size: 1.5pc;
+  }
+
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .servicio1 {
+    margin-top: 30px;
+  }
+}
+/*Fin Kevin*/
+
+/*Joana*/
+#sabiasque {
+  padding: 20px;
+  color: #fff; /* Cambiamos el color de texto dentro de la sección "Sabías que?" */
+  background-color: #1b3039; /* Cambiamos el color de fondo de la sección "Sabías que?" */
+}
+
+#sabiasque h1 {
+  margin-top: 0;
+  text-transform: uppercase; /* Convertimos el texto a mayúsculas */
+  text-align: center; /* Centramos el texto */
+  font-size: 24px; /* Aumentamos el tamaño del título */
+}
+
+#sabiasque ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Hacemos que los ítems de la lista se alineen en línea */
+  justify-content: space-between; /* Distribuimos uniformemente los ítems en el espacio horizontal */
+}
+
+#sabiasque li {
+  flex: 1; /* Hacemos que cada ítem de la lista ocupe el mismo espacio */
+  display: flex; /* Hacemos que cada ítem de la lista se alinee en línea */
+  flex-direction: column; /* Alineamos los elementos dentro de cada ítem de la lista en una columna */
+  align-items: center; /* Alineamos verticalmente los elementos dentro de cada ítem de la lista */
+  text-align: center; /* Centramos el texto */
+  margin: 0 12px; /* Añadimos un margen horizontal para separar los ítems */
+}
+
+#sabiasque img {
+  width: 80%;
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px; /* Añadimos un margen inferior para separar la imagen del texto */
+  box-shadow: 0 4px 6px rgba(248, 246, 246, 0.907); /* Añadimos una sombra a las imágenes */
+}
+
+#imagen3 {
+  width: 80%;
+  max-width: 80%;
+  height: 110%;
+  margin-bottom: 10px; /* Añadimos un margen inferior para separar la imagen del texto */
+  /* Agregamos estilos adicionales para la imagen 3 */
+  height: 210px; /* Ajustamos la altura de la imagen 3 */
+  object-fit: cover; /* Ajustamos la forma en que se ajusta la imagen */
+}
+
+#sabiasque h3 {
+  margin-top: 0;
+}
+
+#sabiasque p {
+  margin-bottom: 10px; /* Agregamos un margen inferior para separar el texto del siguiente ítem */
+  text-shadow: 1px 1px 2px rgb(3, 3, 3); /* Agregamos una sombra al texto */
+}
+
+#comentarios {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+#comentarios h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center; /* Centramos el texto */
+}
+
+#formulario-comentario {
+  margin-bottom: 20px;
+}
+
+#formulario-comentario label {
+  font-weight: bold;
+}
+
+#formulario-comentario input[type="text"],
+#formulario-comentario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#formulario-comentario button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#formulario-comentario button:hover {
+  background-color: #45a049;
+}
+
+#comentarios-anteriores {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.comentario {
+  margin-bottom: 20px;
+}
+
+.comentario strong {
+  font-weight: bold;
+}
+
+.comentario p {
+  margin: 5px 0;
+}
+
+footer {
+  color: #f0f0f0; /* Cambiamos el color del texto a un tono de gris claro */
+  font-size: 20px;
+  background-color: #1b3039;
+  margin: 0 px;
+	position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+}
+
+/*Fin Joana*/
+
+/*Mariana*/
+
+h1 {
+  text-align: center;
+  color: #e2f1f8;
+}
+
+h2 {
+  text-align: center;
+  color: cadetblue;
+}
+
+h3 {
+  text-align: center;
+  color: var(--mariana-title-color);
+}
+p {
+  color: var(--mariana-p-color);
+  text-align: center;
+}
+.subtitulo {
+  color: #1b3039;
+  text-align: center;
+}
+.parrafo2 {
+  color: #1b3039;
+}
+.tabla1 {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 20px;
+}
+
+.centro {
+  margin: 10px;
+  justify-content: space-between;
+}
+.centro .lateral {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.centro .sesion {
+  width: 300%;
+  height: 300%;
+}
+.lateral .cafe {
+  background-color: #1b3039;
+
+  width: 300%;
+  border: 2px solid black;
+  border-radius: 7px;
+  margin: 4px;
+}
+.lateral .rojo {
+  background-color: #1b3039;
+
+  width: 300%;
+  border: 2px solid black;
+  border-radius: 7px;
+  margin: 4px;
+}
+.lateral .verde {
+  background-color: #1b3039;
+
+  width: 300%;
+  border: 2px solid black;
+  border-radius: 7px;
+  margin: 4px;
+}
+.imagen1 {
+  height: 500px;
+  width: 1497px;
+  margin: 5px;
+}
+
+/*Fin Mariana*/
