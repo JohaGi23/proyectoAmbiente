@@ -17,7 +17,6 @@ def generadorDatosCalidad():
 		id=random.randint(0,10000000)
 		calidadAire=[comuna,totalPoblacion,tamanoMuestra,ica,fecha,nombreEncuestado,id]
 		listaDatos.append(calidadAire)
-
 	return listaDatos
 
-print(generadorDatosCalidad())
+
