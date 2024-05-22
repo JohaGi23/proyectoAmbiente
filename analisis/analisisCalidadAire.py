@@ -8,7 +8,7 @@ def construirDataFrameCalidadAire():
   datosCalidadAire=generadorDatosCalidad()
   
   #construyo el dataframe
-  calidadAireDF=pd.DataFrame(datosCalidadAire, columns=["Comunas,tplob","muestra","ICA","fecha","nombre","id"])
+  calidadAireDF=pd.DataFrame(datosCalidadAire, columns=['Comunas','tplob','muestra','ICA','fecha','nombre','id'])
   print(calidadAireDF)
   
 #probando

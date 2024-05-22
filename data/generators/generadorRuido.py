@@ -7,8 +7,8 @@ def generarRuido():
 												'comuna 4 aranjuez','comuna 13 san javier', 'comuna 16 belen'])
     totalPoblacion=random.choice(['3000','4500','5000','10000'])
     tamanoMuestra=random.choice(['1000','2000','3500','6000'])
-    decibelesNoche = random.randint(0,100)
     decibelesDia= random.randint(0,150)
+    decibelesNoche = random.randint(0,100)
     fechaEncuesta= random.choice(["23/06/2024","22/06/2024","21/06/2024","20/05/2024"])
     nombreEncuestado=random.choice(["Pedro Paramos","Sandra Mor","Kevin Albeiro",
 																	"Valentina Mor", "Juam Jimeno"])
