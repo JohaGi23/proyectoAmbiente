@@ -14,7 +14,7 @@ def generarRuido():
 																	"Valentina Mor", "Juam Jimeno"])
     datosRuido=[comuna,totalPoblacion,tamanoMuestra,decibelesDia,decibelesNoche,fechaEncuesta,nombreEncuestado]
     listaDatos.append(datosRuido)
+  return listaDatos
   
-generarRuido()
 
 
