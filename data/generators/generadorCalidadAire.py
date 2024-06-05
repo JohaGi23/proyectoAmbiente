@@ -7,7 +7,7 @@ def generadorDatosCalidad():
 	listaDatos=[]
 	for i in range(1000):
 		comuna=random.choice(['comuna 1 popular','comuna 2 sta cruz','comuna 12 la america',
-												'comuna 4 aranjuez','comuna 13 san javier', 'comuna 16 belen'])
+												'comuna 4 aranjuez','comuna 13 san javier', 'comuna 16 belen','sin','-'])
 		totalPoblacion=random.choice(['3000','4500','5000','10000'])
 		tamanoMuestra=random.choice(['1000','2000','3500','6000'])
 		ica=random.randint(20,100)

@@ -3,22 +3,26 @@ import random
 def generarDatosSistemaArboles():
     listaDatos=[]
     for i in range (500):
-      corregimientos=random.choice([
-        'San Antonio de Prado',
-        'San Cristóbal',
-        'Altavista','San Sebastián de Palmitas',
-    		'Santa Elena',
-        'San Javier',
-        'San Juan de la Tasajera',
-       'San Antonio de Prado',            'Santa Elena',
+        corregimientos=random.choice([
+
+            'San Antonio de Prado',
+            'San Cristóbal',
+            'Altavista',
+            'San Sebastián de Palmitas',
+            'Santa Elena',
+            'San Javier',
+            'San Juan de la Tasajera',
+            'San Antonio de Prado',
+            'Santa Elena',
             'Altavista',
             'San Cristóbal',
             'San Sebastián de Palmitas',
             'San Antonio de Prado',
             'San Javier',
             'San Juan de la Tasajera'])
-      hectareasSembradas=random.choice(['3000','4500','5000','10000'])
-			especieSembrada=random.choice([
+        hectareasSembradas=random.choice(['3000','4500','5000','10000'])
+        especieSembrada=random.choice([
+
             'Roble',
             'Pino',
             'Ceiba',
@@ -41,5 +45,3 @@ def generarDatosSistemaArboles():
         listaDatos.append(sistemaArboles)
 
     return listaDatos
-print(generarDatosSistemaArboles())
-
