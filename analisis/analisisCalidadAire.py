@@ -9,42 +9,39 @@ def construirDataFrameCalidadAire():
   datosCalidadAire=generadorDatosCalidad()
   
   #construyo el dataframe
-  calidadAireDF=pd.DataFrame(datosCalidadAire, columns=['Comunas','ttlplob','muestra','ICA','fecha','nombre','id'])
-  #probando
-  #print(calidadAireDF)
-  #crearTablaHtml(calidadAireDF,"calidadAire")
-  
-  #Limpiando el dataframe
-  
-  #1. Limpiando (reemplazando valores)
-  #calidadAireDF.replace('-',pd.NA,inplace=True)
-  #calidadAireDF.replace('sin',pd.NA,inplace=True)
-  #probando
-  #print("\n")
-  #print(calidadAireDF)
-  
-  #2. Limpiando (eliminando valores)
-  calidadAireDF.replace('sin',pd.NA,inplace=True)
-  calidadAireDF.dropna(inplace=True)
-  
-  #3. Filtrando datos para depurar la información
-  #FILTRAR DATOS ES OBTENER NUEVOS DATAFRAMES
-  #AL APLICAR CONDICIONES LÓGICAS
-  
-  #CONTAR DATOS
-  
-  #CONSULTAR DATOS ESPECÍFICOS
-  filtraICAPositivo= calidadAireDF.query("(ICA>50) and (ICA <50)")
-  filtraICAModerado= calidadAireDF.query("(ICA>=50) and (ICA <70)")
-  filtraICAPeligroso= calidadAireDF.query("(ICA>=70)")
-  #print(filtraICAPositivo)
-  #print("\n")
-  #print(filtraICAPositivo)
-  #print("\n")
-  print(filtraICAPositivo)
-  #print("\n")
+  calidadAireDF=pd.DataFrame(datosCalidadAire, columns=['Comunas','tplob','muestra','ICA','fecha','nombre','id'])
 
+  #limpiando el dataframe
+
+  #1. Limpiando (reemplazando valores)
+  #calidadAireDF.replace('-', pd.NA, inplace=True)
+  #calidadAireDF.replace('sin', pd.NA, inplace=True)
+
+  #2. limpiando (eliminando valores)
+  calidadAireDF.replace('sin', pd.NA, inplace=True)
+  calidadAireDF.dropna(inplace=True)
+
+  #3. Filtrando datos para depurar la informacion
+  #FILTRAR DTOS ES OBTENER NUEVOS DATFRAMES
+  # AL APLICAR CONDICIONES LOGICAS
+
+  #CONTAR DATOS
+
+  #CONSULTAR DATOS ESPECIFICOS
+  #filtroPositivo=calidadAireDF.query("(ICA>=20) and (ICA<50)")
+  #filtroICAModerado=calidadAireDF.query("(ICA>=50) and (ICA<70)")
+  flitroICAPeligroso=calidadAireDF.query("(ICA>=70)").value_counts()
+
+  #print(filtroPositivo)
+  #print('\n')
+  #print(filtroICAModerado)
+  #print('\n')
+  print(flitroICAPeligroso)
+  print('\n')
+
+  #probando...
   
+  #crearTablaHtml(calidadAireDF,"calidadAire")
   
 #probando
 construirDataFrameCalidadAire()
