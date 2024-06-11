@@ -2,9 +2,9 @@
 #multiples datos con python
 
 import random 
+listaDatos=[]
 
 def generadorDatosCalidad():
-	listaDatos=[]
 	for i in range(1000):
 		comuna=random.choice(['comuna 1 popular','comuna 2 sta cruz','comuna 12 la america',
 												'comuna 4 aranjuez','comuna 13 san javier', 'comuna 16 belen','sin','-'])

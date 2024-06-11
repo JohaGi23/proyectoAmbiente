@@ -8,7 +8,7 @@ def construirDataFrameRuido():
   datosRuido=generarRuido()
   
   #construyo el dataframe
-  ruidoDF=pd.DataFrame(datosRuido, columns=['Comuna','tllpoblacion',"tñmuestra","dbDia","dbNoche","fecha","nombre",])
+  ruidoDF=pd.DataFrame(datosRuido, columns=['Comuna','tllpoblacion',"tñmuestra","dbDia","dbNoche","fecha","nombre"])
   #print(ruidoDF)
   
 #probando

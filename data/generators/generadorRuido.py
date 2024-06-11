@@ -1,7 +1,7 @@
-import random 
+import random
+listaDatos=[]
 #NOMBREEDICIFIO
 def generarRuido():
-  listaDatos=[]
   for i in range(500):
     comuna=random.choice(['comuna 1 popular','comuna 2 sta cruz','comuna 12 la america',
 												'comuna 4 aranjuez','comuna 13 san javier', 'comuna 16 belen'])

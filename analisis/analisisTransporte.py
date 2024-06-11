@@ -1,7 +1,6 @@
 import pandas as pd
 
-from data.generators.generadorTransporte import generadorDatosTransporte
-
+from data.generators.generadorDatosTransporte import generadorDatosTransporte
 #PARA ANALIZAR DATOS CON PYTHON DEBEMOS CONSTRUIR UN DATAFRAME
 
 def construirDataFrameTransporte():
@@ -12,6 +11,6 @@ def construirDataFrameTransporte():
     TransporteDF=pd.DataFrame(datosTransporte,columns=['Medio','Frecuencia','Genero','Id','Nombre'])
 
     #probando...
-    #print(TransporteDF)
+    print(TransporteDF)
 
 construirDataFrameTransporte()
