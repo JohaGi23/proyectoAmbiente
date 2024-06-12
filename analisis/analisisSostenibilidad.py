@@ -11,6 +11,7 @@ def construirDataFrameSostenibilidad():
     #construyo el Dataframe
     SostenibilidadDF=pd.DataFrame(datosSostenibilidad,columns=['empresa','municipio','elemento','cantidad','tipo de persona'])
 
+
     #probando...
     #print(SostenibilidadDF)
 

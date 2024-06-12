@@ -48,9 +48,9 @@ def construirDataFrameRuido():
   #graficando datos
   plt.figure(figsize=(20,20))
   datosAgrupados.plot(kind='bar',color='green')
-  plt.title('Calidad de ruido por comuna en Medellín')
+  plt.title('Calidad de ruido generado en el dia en comunas de Medellín')
   plt.xlabel('Comuna')
-  plt.ylabel('Tamaño de Muestra')
+  plt.ylabel('Ruido x dia')
   plt.grid(True)
   plt.xticks(rotation=45)
   plt.savefig('./assets/img/calidadRuido.png',format='png',dpi=300)
