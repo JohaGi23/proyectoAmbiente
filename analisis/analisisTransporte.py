@@ -59,6 +59,6 @@ def construirDataFrameTransporte():
   crearTablaHtml(TransporteDF,"Transporte")
 
     #probando...
-    print(TransporteDF)
+print(TransporteDF)
 
 construirDataFrameTransporte()
