@@ -58,7 +58,7 @@ def construirDataFrameRuido():
 
   #probando...
   
-  crearTablaHtml(ruidoDF,"calidadAire")
+  crearTablaHtml(ruidoDF,"calidadRuido")
   
 #probando
 construirDataFrameRuido()
